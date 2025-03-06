@@ -232,3 +232,11 @@ By the end of this milestone, you will:
 Implement data validation to ensure only valid data is saved
  Create a POST API endpoint to receive and store product data in MongoDB
  Understand the importance of data integrity and validation
+
+<h1>##milestone 15 </h1>
+ 
+nav bar creation
+
+<h1> ##milestone 16 </h1>
+
+ProductDetail creation
