@@ -17,7 +17,7 @@ CSS - Styling for the form and layout
 React Icons - Icons for email and password fields
 Milestone 3: Backend Setup
 Overview
-With <h1>Milestone 2</h1> complete, we built the frontend foundation of our e-commerce application. In Milestone 3, we focused on setting up the backend by: Structuring backend folders Setting up a Node.js & Express server Connecting the project to MongoDB Implementing basic error handling
+With <h1>Milestone 3</h1> complete, we built the frontend foundation of our e-commerce application. In Milestone 3, we focused on setting up the backend by: Structuring backend folders Setting up a Node.js & Express server Connecting the project to MongoDB Implementing basic error handling
 
 This ensures that our application has a strong backend to support future development.
 
@@ -34,7 +34,7 @@ graphql Copy Edit backend/ │── controllers/ # Handles API logic
 Technologies Used
 Node.js & Express.js – Backend framework MongoDB Atlas & Mongoose – Database management dotenv – Manage environment variables Cors & Body-Parser – Middleware for API requests
 
-<h1>Milestone 3:</h1> User Model, Controller & File Uploads
+<h1>Milestone 4:</h1> User Model, Controller & File Uploads
 Overview
 In this milestone, we focused on setting up key backend features for user management and file uploads. With guidance from our mentor, we completed: User Model – Defines how user data is structured in MongoDB. User Controller – Handles API logic for user-related operations. Multer Setup – Enables image/file uploads for user profiles and products.
 
