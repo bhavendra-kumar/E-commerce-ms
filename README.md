@@ -401,7 +401,10 @@ Updates total price dynamically.
 Saves the cart in MongoDB and returns the updated cart.
 This allows users to add products to their cart while keeping track of quantities and total cost.
 
+<h1>milestone 18</h1>
 
+I Created an endpoint to receive request from cart page.
+Now, i create an backend endpoint to fetch all the products inside cart with user mail.
 
 
 
