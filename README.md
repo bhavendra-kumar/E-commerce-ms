@@ -1,3 +1,3 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>#Milestone18</h1>
+* I created an endpoint to receive request from cart page.
+* Now, i created an backend endpoint to fetch all the products inside cart with user mail
