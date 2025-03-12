@@ -406,7 +406,9 @@ This allows users to add products to their cart while keeping track of quantitie
 I Created an endpoint to receive request from cart page.
 Now, i create an backend endpoint to fetch all the products inside cart with user mail.
 
-
-
+<h1>#Milestone19</h1>
+* I created an cart page that display the products inside cart using endpoint we build in milestone 18 and
+for each product add an option to increase and decrease quantity using + and - buttons.
+Now, Write an endpoint to increase and decrease the quantity
 
 
