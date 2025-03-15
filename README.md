@@ -1,3 +1,4 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>#Milestone20</h1>
+* I created backend endpoint that will send all the user data using mail and
+created an frontend profile page that will display all the user data.Now, 
+display profile photo, name, mail and addresses.
