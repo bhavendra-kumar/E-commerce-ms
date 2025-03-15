@@ -411,4 +411,7 @@ Now, i create an backend endpoint to fetch all the products inside cart with use
 for each product add an option to increase and decrease quantity using + and - buttons.
 Now, Write an endpoint to increase and decrease the quantity
 
-
+<h1>#Milestone20</h1>
+* I created backend endpoint that will send all the user data using mail and
+created an frontend profile page that will display all the user data.Now, 
+display profile photo, name, mail and addresses.
