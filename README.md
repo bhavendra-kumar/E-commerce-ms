@@ -420,3 +420,6 @@ display profile photo, name, mail and addresses.
 * I created an frontend form that will will take address. Now, 
 take country, city, address1, address2, zip code, address type.
 
+<h1>Milestone22</h1>
+* I created an backend endpoint that will store the address inside user profile in database.
+
