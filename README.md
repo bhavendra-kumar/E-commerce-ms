@@ -1,3 +1,2 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>#Milestone22</h1>
+* I created an backend endpoint that will store the address inside user profile in database.
