@@ -415,3 +415,8 @@ Now, Write an endpoint to increase and decrease the quantity
 * I created backend endpoint that will send all the user data using mail and
 created an frontend profile page that will display all the user data.Now, 
 display profile photo, name, mail and addresses.
+
+<h1>#Milestone 21</h1>
+* I created an frontend form that will will take address. Now, 
+take country, city, address1, address2, zip code, address type.
+
