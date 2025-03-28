@@ -1,3 +1,3 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>#Milestone-25</h1>
+* I created an backend endpoint that will help in placing the order.
+
