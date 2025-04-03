@@ -3,7 +3,7 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 import { IoMdMail } from "react-icons/io";
-import server from '../server';
+import server from '../../server';
 import axios from 'axios'
 import { toast } from 'react-toastify';
 
