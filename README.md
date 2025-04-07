@@ -1,3 +1,6 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>Milestone 28</h1>
+* The use will be able to cancel the placed orders.
+
+<h1>Milestone 29</h1>
+*We will learn how to use PayPal API
+and how to Integrate online payments.
