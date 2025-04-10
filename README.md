@@ -1,3 +1,6 @@
-<h1>#Milestone1</h1>
-* its a multi vendor e-commerce website where user can purchase order, talk with the product seller, if user want to sell his product , he can became admin.
-* Tech stack mern stack with tailwind css
+<h1>#Milestone-30</h1>
+* Learning how to use PayPal API.
+and learn how to Integrate online payments.
+<h1>Milestone-31</h1>
+* Knowning How to use redux for global state management
+and Implement redux store to store all global states
