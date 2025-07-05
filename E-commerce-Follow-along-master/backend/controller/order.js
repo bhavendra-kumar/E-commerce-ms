@@ -10,7 +10,7 @@ router.post("/my-order", async (req, res) => {
 
         if (!email || !productIds|| !addressId || !totalPrice || !quantity) {
             return res.status(400).json({ error: "All fields are required" });
-        };
+        }
 
         const user = await User.findOne({ email });
         if (!user) return res.status(404).json({ error: "User not found" });
