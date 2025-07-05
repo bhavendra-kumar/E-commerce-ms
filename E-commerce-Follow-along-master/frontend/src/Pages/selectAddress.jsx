@@ -9,16 +9,17 @@ const SelectAddress = () => {
     const [error, setError] = useState(null);
     const navigate = useNavigate();
   const location=      useLocation()
-  console.log(location.state)
+  const {products}=location.state||{}
+  console.log(products)
     const userEmail = 'sankamithra1614@gmail.com'; 
 
     useEffect(() => {
         const fetchAddresses = async () => {
             try {
                 const data = await axios.get(`http://localhost:5000/api/user/addresses?email=${userEmail}`);
-console.log("whole response",data)
-console.log("taking the correct data", data.data)
-console.log("taking address from data", data.data.addresses )   
+// console.log("whole response",data)
+// console.log("taking the correct data", data.data)
+// console.log("taking address from data", data.data.addresses )   
               
                     setAddresses(data.data.addresses);
                 
@@ -38,7 +39,7 @@ console.log("taking address from data", data.data.addresses )
         //navigate('/order-confirmation', { state: { addressId, userEmail:'sankamithra1614@gmail.com' } });
         const handleSelectAddress = (addressId) => {
             console.log("Navigating with:", addressId, userEmail);
-            navigate('/order-confirmation', { state: { addressId, userEmail } });
+            navigate('/order-confirmation', { state: { addressId, userEmail,products } });
         };
         
         //navigate('/order-confirmation', { state: { addressId, userEmail} });
