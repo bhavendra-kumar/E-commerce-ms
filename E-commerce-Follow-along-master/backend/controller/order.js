@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("../model/order");
-const User = require("../model/user");
-const Product = require("../model/product");
+const Order = require("../model/Order");
+const User = require("../model/User");
+const Product = require("../model/Product");
 
 router.post("/my-order", async (req, res) => {
     try {

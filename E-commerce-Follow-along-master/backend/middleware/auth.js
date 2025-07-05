@@ -1,7 +1,7 @@
 const ErrorHandler = require('../untils/ErrorHandler');
 const jwt = require('jsonwebtoken');
 const catchAsyncErrors = require('./catchAsyncError');
-const User = require('../model/user');
+const User = require('../model/User');
 
 // Middleware to check if user is authenticated
 exports.isAuthenticated = catchAsyncErrors(async (req, res, next) => {

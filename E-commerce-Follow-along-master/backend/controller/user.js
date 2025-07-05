@@ -1,6 +1,6 @@
 const express = require('express');
 const { upload } = require('../multer');
-const User = require('../model/user');
+const User = require('../model/User.js');
 const path = require('path');
 const fs = require('fs');
 const ErrorHandler = require('../untils/ErrorHandler.js');

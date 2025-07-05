@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 const userRoutes = require('./controller/user');
-const productRoutes = require('./controller/Product');
+const productRoutes = require('./controller/product');
 const orderRoutes = require('./controller/order');
 
 app.use('/api/user', userRoutes);

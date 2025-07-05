@@ -1,10 +1,10 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const Product = require('../model/product')
+const Product = require('../model/Product')
 const { upload } = require('../multer')
 const router = express.Router()
 const path = require('path');
-const User = require('../model/user')
+const User = require('../model/User')
 const validateProductData = (data) => {
     const errors = [];
 
