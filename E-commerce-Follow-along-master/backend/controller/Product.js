@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require ('mongoose')
 const Product = require('../model/product')
-const {pupload} = require('../multer')
+const {upload} = require('../multer')
 const router = express.Router()
 const path = require('path');
 const User = require('../model/user')
@@ -19,7 +19,7 @@ const validateProductData=(data)=>{
 }
 
 
-router.post('/createProduct',pupload.array('images',10),async(req,res)=>{
+router.post('/createProduct',upload.array('images',10),async(req,res)=>{
     const {name,description,category,tags,price,stock, email} = req.body
     const images = req.files.map((file) => `${path.basename(file.path)}`);
 
@@ -130,7 +130,7 @@ if(!products)
 });
 
 
- router.put('/update-product/:id',pupload.array('images',10), async(req,res)=>{
+ router.put('/update-product/:id',upload.array('images',10), async(req,res)=>{
     try{
      const {id}=req.params
      const  {name ,description,price,stock,email,category}=req.body

@@ -26,7 +26,6 @@ axios.get(`${server}/user/getuser`,{withCredentials:true})
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/activation/:Activation_Token" element={<ActivationPage />} /> 
-                
                  <Route path="/productCreate" element={<CreateProduct/>}/>
                  <Route path="/my-product" element={<MyProduct/>}/>
                  <Route path="/cart" element={<Cart/>}/>

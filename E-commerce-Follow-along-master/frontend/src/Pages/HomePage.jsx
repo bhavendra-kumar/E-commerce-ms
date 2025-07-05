@@ -1,31 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import Product from '../components/product'
+import React, { useEffect, useState } from 'react';
+import Product from '../Components/Product';
 import axios from 'axios';
 import server from '../server';
+import Nav from '../Components/nav';
 
 function HomePage() {
-
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true); // For loading state
-  const [error, setError] = useState(null); // For error handling
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get(`${server}/product/get-products`);
-        console.log(data)
-        setProducts(data.products);
+        const token = localStorage.getItem("token"); // optional, only needed if API is protected
+
+        const response = await axios.get(`${server}/product/get-products`, {
+          headers: {
+            Authorization: token ? `Bearer ${token}` : undefined
+          }
+        });
+
+        console.log(response.data);
+        setProducts(response.data.products);
         setLoading(false);
       } catch (err) {
         console.error('Error fetching product', err);
-        setError(err.message);
+        const errorMsg = err.response?.data?.message || err.message;
+        setError(errorMsg);
         setLoading(false);
       }
     };
-  
+
     fetchProducts();
   }, []);
-  
+
   if (loading) {
     return <div className="text-center text-white mt-10">Loading products...</div>;
   }
@@ -36,15 +44,14 @@ function HomePage() {
 
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        {products.map((item,index)=>(
-          <Product key={index} {...item}/>
+      <Nav />
+      <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        {products.map((item, index) => (
+          <Product key={index} {...item} />
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default HomePage
-
-/*** */
+export default HomePage;

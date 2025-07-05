@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AddressCard from "../components/AddressCard";
-import Nav from "../components/nav";
+import AddressCard from "../Components/AdressCard";
+import Nav from "../Components/nav";
 
 export default function Profile() {
 	const [personalDetails, setPersonalDetails] = useState({
@@ -16,7 +16,7 @@ export default function Profile() {
 
 	useEffect(() => {
 		fetch(
-			`http://localhost:5000/api/user/profile?email=${"sankamithra1614@gmail.com"}`,
+			`http://localhost:5000/api/user/profile?email=${"bhavendrakumar007@gmail.com"}`,
 			{
 				method: "GET",
 				headers: {
@@ -99,6 +99,14 @@ export default function Profile() {
 							</div>
 						</div>
 					</div>
+					<div className="w-full h-max p-5">
+							<button
+								className="w-max px-3 py-2 bg-neutral-600 text-neutral-100 rounded-md text-center hover:bg-neutral-100 hover:text-black transition-all duration-100"
+								// onClick={handleAddAddress}
+							>
+								myOrder
+							</button>
+						</div>
 					<div className="w-full h-max my-2 p-5">
 						<div className="w-full h-max">
 							<h1 className="text-3xl text-neutral-100">

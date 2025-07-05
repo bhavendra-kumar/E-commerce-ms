@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("./model/order");
-const User = require("./model/user");
-const Product = require("./model/product");
+const Order = require("../model/order");
+const User = require("../model/user");
+const Product = require("../model/product");
 
 router.post("/my-order", async (req, res) => {
     try {
@@ -36,10 +36,10 @@ router.post("/my-order", async (req, res) => {
 
 router.get('/myOrder',async(req,res)=>{
     try{
-        const email = req.query
+        const {email} = req.query
         if(!email)
             res.status(400).json({message:'login to view the order'})
-        const myOrder= await Order.find({})
+        const myOrder= await Order.find({ userId: user._id });
            res.status(201).json({myOrder})
     }catch(e){
 res.status(500).json({msg:e})
