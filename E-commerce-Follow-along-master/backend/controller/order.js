@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("../model/Order");
-const User = require("../model/User");
-const Product = require("../model/Product");
+const Order = require("../model/order");
+const User = require("../model/user");
+const Product = require("../model/product");
 
 router.post("/my-order", async (req, res) => {
     try {
@@ -10,7 +10,7 @@ router.post("/my-order", async (req, res) => {
 
         if (!email || !productIds|| !addressId || !totalPrice || !quantity) {
             return res.status(400).json({ error: "All fields are required" });
-        };
+        }
 
         const user = await User.findOne({ email });
         if (!user) return res.status(404).json({ error: "User not found" });
@@ -36,10 +36,10 @@ router.post("/my-order", async (req, res) => {
 
 router.get('/myOrder',async(req,res)=>{
     try{
-        const {email} = req.query
+        const email = req.query
         if(!email)
             res.status(400).json({message:'login to view the order'})
-        const myOrder= await Order.find({ userId: user._id });
+        const myOrder= await Order.find({})
            res.status(201).json({myOrder})
     }catch(e){
 res.status(500).json({msg:e})

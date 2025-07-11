@@ -1,6 +1,6 @@
 // SelectAddress.jsx
 import React, { useState, useEffect } from 'react';
-import Nav from '../components/nav'; // Ensure the path is correct and component name matches
+import Nav from '../Components/nav'; // Ensure the path is correct and component name matches
 import { useLoaderData, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 const SelectAddress = () => {

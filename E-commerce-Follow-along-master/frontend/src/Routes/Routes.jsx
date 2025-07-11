@@ -8,7 +8,7 @@ import MyProduct from '../Pages/myProduct'
 import ProductDetail from '../Pages/ProductDetail';
 import Cart from '../Pages/cart';
 import Profile from '../Pages/profile';
-import CreateAddress from '../Pages/createAdress';
+import CreateAddress from '../pages/createAddress';
 import SelectAddress from '../Pages/selectAddress';
 import OrderConfirmation from '../Pages/Order';
 import MyOrders from '../Pages/myOrders';

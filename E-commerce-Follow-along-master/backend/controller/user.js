@@ -1,12 +1,12 @@
 const express = require('express');
 const { upload } = require('../multer');
-const User = require('../model/User.js');
+const User = require('../model/user.js');
 const path = require('path');
 const fs = require('fs');
-const ErrorHandler = require('../untils/ErrorHandler.js');
+const ErrorHandler = require('../utils/ErrorHandler.js');
 const jwt = require('jsonwebtoken');
-const sendMail = require('../untils/mail');
-const sendToken = require('../untils/jwtToken'); 
+const sendMail = require('../utils/mail');
+const sendToken = require('../utils/jwtToken'); 
 const {isAuthenticated}=require('../middleware/auth.js')
 
 

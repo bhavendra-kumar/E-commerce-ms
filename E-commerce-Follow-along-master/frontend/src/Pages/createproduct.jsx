@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import server from '../server';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-
-
 function CreateProduct() {
   const [images, setImages] = useState([]);
   const [preImage, setPreImage] = useState([]);
