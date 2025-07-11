@@ -36,10 +36,10 @@ router.post("/my-order", async (req, res) => {
 
 router.get('/myOrder',async(req,res)=>{
     try{
-        const {email} = req.query
+        const email = req.query
         if(!email)
             res.status(400).json({message:'login to view the order'})
-        const myOrder= await Order.find({ userId: user._id });
+        const myOrder= await Order.find({})
            res.status(201).json({myOrder})
     }catch(e){
 res.status(500).json({msg:e})

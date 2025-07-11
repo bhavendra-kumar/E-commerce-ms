@@ -10,7 +10,7 @@ const MyProduct = () => {
 const[product,setProduct]=  useState([])
 const [error,setError]=useState('')
 const navigate=useNavigate()
-const email = `bhavendrakumar007@gmail.com`
+const email = `sankamithra1614@gmail.com`
 
 const handleDelete = async(id)=>{
 await axios.delete(`${server}/product//delete-product/${id}`)

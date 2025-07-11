@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import server from '../server'
 import axios from 'axios'
 function MyOrders() {
-    const email = 'bhavendrakumar007@gmail.com'
+    const email = 'sankamithra1614@gmail.com'
     useEffect(()=>{
 const orders = async()=>{
     try{

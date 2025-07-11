@@ -12,7 +12,7 @@ const ProductDetail = () => {
   const { id } = useParams();
   const [img, setImg] = useState("");
   const [state, setState] = useState(0);
- const email=`bhavendrakumar007@gmail.com`
+ const email=`sankamithra1614@gmail.com`
   useEffect(() => {
     const fetchProduct = async () => {
       try {
